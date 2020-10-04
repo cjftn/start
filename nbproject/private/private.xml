@@ -2,6 +2,27 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+        <group>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/helper_menu.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/victory_menu.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/codin_menu.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/kor_Game.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/English_Game.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/kor_game_menu.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/sqlDB.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/DBView.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/helper.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/타자연습.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/English.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/coding.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/Menu.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/game.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/game2P.java</file>
+            <file>file:/C:/Users/uy680/Documents/NetBeansProjects/타자연습/src/victory.java</file>
+        </group>
+>>>>>>> 8e1be2b4667ca0076682e33a41e89ccb35fb57b0
     </open-files>
 </project-private>
