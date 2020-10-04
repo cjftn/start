@@ -1,3 +1,12 @@
+
+import com.sun.media.jfxmedia.events.PlayerEvent;
+import java.io.File;
+import java.io.FileInputStream;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,11 +20,34 @@
 public class 타자연습 extends javax.swing.JFrame {
 
     /**
-     * Creates new form 타자연습
+     * Creates new form ���옄�뿰�뒿
      */
     public 타자연습() {
         initComponents();
         setTitle("타자연습");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+                try {
+                    while (true) {
+                        Clip clip1 = AudioSystem.getClip();
+                        clip1.open(AudioSystem.getAudioInputStream(
+                                //new File("E:\\song.wav").getAbsoluteFile()));
+                                getClass().getResource("sound.wav")
+                        )
+                        );
+                        clip1.start();
+                        Thread.sleep(3096000);
+                    }
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+            }
+        }).start(); 
+        
+       
+        
     }
 
     /**
@@ -35,16 +67,11 @@ public class 타자연습 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(newJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(newJPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(newJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addComponent(newJPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
         );
 
         pack();
